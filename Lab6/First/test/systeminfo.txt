@@ -1,2 +1,2 @@
-OS Name:                   Microsoft Windows 10 Enterprise LTSC
-OS Version:                10.0.17763 N/A Build 17763
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19041 N/A Build 19041
