@@ -2,7 +2,7 @@
 
 if [[ -n "$1" ]]
 then
-	name=$((echo $1) | (tr " " "_"))
+	name=$((echo $1) | (tr " " "_")) # пробел в имени заменяем на нижний слеш
 	mv "$1" "$name"
 	(find ~/.trash -type d 2> /dev/null) || (mkdir ~/.trash)
 	(find "$name" -type d 2> /dev/null) || (echo "File not found")
@@ -11,7 +11,7 @@ then
 	then
 		path=$(echo $(ls ~/.trash | tail -1)"+1" | bc)
 	fi
-	ln "$name" ~/.trash/$path
+	ln "$name" ~/.trash/$path # создание ссылки
 	rm "$name"
 	echo $PWD"/"$name" "$path >> ~/.trash.log
 else
