@@ -23,8 +23,10 @@ function makeBackup {
 	done
 }
 
+# по регулярке ищем любую дир-ю с названием бэкап
 backup=$(find /home/user -name "Backup-[0-9]*-[0-9]*-[0-9]*" -type d 2> /dev/null | sort -n | tail -1 | awk -F "/" '{print $4}' )
 
+# если нет, то создаём бэкап
 if [[ -z $backup ]]
 then	
 	makeBackup
@@ -33,6 +35,7 @@ else
 	current=$(echo $(date +"%Y-%m-%d") | awk -F "-" '{print $3}')
 	age=$(echo $current"-"$oldBackup | bc)
 
+# если старше 7 дней, то всё ок, else бэкап свежий и выполняем условие
 	if [[ $age -ge 7 ]]
 	then
 		echo "New backup created"
