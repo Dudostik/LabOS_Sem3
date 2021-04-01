@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "1. Nano"
-echo "2. Vim"
+echo "2. Vi"
 echo "3. Links"
 echo "4. Quit"
 
