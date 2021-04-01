@@ -1,10 +1,15 @@
 #!/bin/bash
 
-if [[ "$1" -lt "$2" ]] && [[ "$3" -lt "$2" ]]
-then echo $2
-elif [[ "$1" -gt "$2" ]] && [[ "$1" -gt "$3" ]]
-then echo $1
-else
-    echo $3
+buffer=0
+
+if [[ "$1" -ge "$2" ]]
+then buffer="$1"
+else buffer="$2"
 fi
 
+if [[ "$3" -ge "$buffer" ]]
+then echo "$3"
+else echo "$buffer"
+fi
+
+exit 0
