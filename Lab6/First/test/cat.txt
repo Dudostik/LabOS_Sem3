@@ -1,12 +1,9 @@
-Total Physical Memory:     16 333 MB
-Available Physical Memory: 4 898 MB
-Virtual Memory: Max Size:  27 597 MB
-Virtual Memory: Available: 7 879 MB
-Virtual Memory: In Use:    19 718 MB
-OS Name:                   Microsoft Windows 10 Enterprise LTSC
-OS Version:                10.0.17763 N/A Build 17763
-FreeSpace     Name  Size           VolumeName  
-31029383168   C:    119388762112   WNHDOBC     
-207000174592  D:    1000186310656  MAJOR       
-4119035904    E:    31035719680    ESD-ISO     
-26624         F:    505856         UEFI_NTFS   
+Total Physical Memory:     8,006 MB
+Available Physical Memory: 1,695 MB
+Virtual Memory: Max Size:  13,126 MB
+Virtual Memory: Available: 2,991 MB
+Virtual Memory: In Use:    10,135 MB
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19041 N/A Build 19041
+ï»¿FreeSpace     Name  Size           VolumeName  
+31029383168   C:    509729505280    
