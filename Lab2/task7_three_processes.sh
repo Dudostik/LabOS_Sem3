@@ -5,7 +5,10 @@ file_2="temp2.log"
 (
 echo ""> "$file_1"
 
+# выводим все процессы в отсортированном порялке
 ps aux | awk '{print $2" "$11 }' | tail -n +2 | sort -nk1 | head -n -5 > temp1.log
+
+# проходимся по файлу
 while read line
 do
 	file_id=$(awk '{print $1}' <<< $line)
