@@ -1,6 +1,6 @@
 cd C:/
 mkdir Lab6
-systeminfo | findstr /B /C:"Название ОС" /C:"Версия ОС" > systeminfo.txt
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version" > systeminfo.txt
 systeminfo | findstr /R /C:"Memory" > meminfo.txt
 wmic logicaldisk get Name, VolumeName, Size, FreeSpace > wmic.txt
 mkdir test
