@@ -10,7 +10,8 @@ do
                                                                              
         sum_exec_runtime=$(grep -Ehis "se\.sum_exec_runtime" "$fsc" | awk '{print $3}')
         nr_switches=$(grep -Ehis "nr_switches" "$fsc" | awk '{print $3}')
-                                                                             
+        
+        # если пустое, то переходим к следующему
         if [ -z $ppid ]
         then
         continue
