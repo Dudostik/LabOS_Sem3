@@ -6,5 +6,5 @@ echo $HOME
 exit 0
 else
 echo "NOT HOME"
-exit 0
+exit 1
 fi
