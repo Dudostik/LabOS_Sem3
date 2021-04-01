@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "$(awk -F: '{print $3 ": " $1}' /etc/passwd | sort -nk 1)"
+awk -F: '{print ($3 "\t" $1)}' /etc/passwd | sort -n
+exit 0
